@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!--Lists-->
+  <h1>Lists</h1>
+  <ul type="arrow">
+    <li>Vegetables</li>
+    <ul>
+    <li>Kales</li>
+    <li>Tomatoes</li>
+    <li>Broccoli</li>
+    </ul>
+  </ul>
+  <ol type ="i">
+    <li>Fruits</li>
+    <ol>
+      <li>Apples</li>
+      <li>Avocado</li>
+      <li>Peach</li>
+    </ol>
+  </ol>
+  
+  <!--Tables-->
+  <h1>Tables</h1>
+  <table border="2">
+    <thead>
+      <tr>
+        <th>vehicle</th>
+        <th>model</th>
+        <th>Purpose</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Bus</td>
+        <td>Dual Passenger</td>
+        <td>Commercial</td>
+     </tr>
+    </tbody>
+  </table>
+
+  <!--Media-->
+  <h1>Video</h1>
+  <video controls width="640" height="200">
+        <source src="https://videos.pexels.com/video-files/5896379/5896379-uhd_1440_2560_24fps.mp4" type="video/mp4">
+        Your browser does not support video playback
+  </video>
+     <h2>Audio</h2>
+     <audio controls>
+        <source src="" type="audio/mpeg">
+        your browser does not support audio playback
+     </audio>
+<!--Forms-->
+  <h2>Forms</h2>
+     <form action="location" method="" enctype="multipart/form-data">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name">
+        <Br></Br>
+        <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+                <br><br>
+                <label for="profile">Profile Picture:</label>
+                <input type="file" name="profile" id="profile">
+                <br><br>
+                <label for="bio">Bio:</label>
+                <textarea name="bio" id="bio" rows="4" cols="50"></textarea>
+                <br><br>
+                <label for="country">Country:</label>
+                <select name="country" id="country">
+                    <option value="">--Select Country--</option>
+                    <option value="usa">USA</option>
+                    <option value="canada">Canada</option>
+                    <option value="uk">UK</option>  
+                </select>
+                <br><br>
+                <input type="submit" value="Submit">
+            </form>
+     </form>
+</body>
+</html>
