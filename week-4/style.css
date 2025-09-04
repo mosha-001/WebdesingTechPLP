@@ -1,0 +1,147 @@
+/* =====================
+   GLOBAL STYLES
+===================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* =====================
+   LAYOUT (GRID)
+===================== */
+body {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+  grid-template-rows: auto auto 1fr auto;
+  min-height: 100vh;
+}
+
+.site-header {
+  grid-area: header;
+  background: #4a90e2;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+.site-nav {
+  grid-area: nav;
+  background: #333;
+}
+
+.site-main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.site-footer {
+  grid-area: footer;
+  background: #4a90e2;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* =====================
+   NAVIGATION (FLEXBOX)
+===================== */
+.site-nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.site-nav li {
+  margin: 0 1rem;
+}
+
+.site-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.site-nav a:hover {
+  text-decoration: underline;
+}
+
+/* =====================
+   CONTENT & SIDEBAR
+===================== */
+.content {
+  background: #f4f4f4;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.sidebar {
+  background: #eaeaea;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+/* =====================
+   FLEXBOX CARDS
+===================== */
+.card-container {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap; /* ensures wrapping on smaller screens */
+}
+
+.card {
+  background: #fff;
+  padding: 1rem;
+  flex: 1;
+  min-width: 150px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+}
+
+/* =====================
+   RESPONSIVENESS
+===================== */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .site-main {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    margin-top: 1rem;
+  }
+
+  .site-nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .site-nav li {
+    margin: 0.5rem 0;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .card-container {
+    flex-direction: column;
+  }
+}
