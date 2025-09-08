@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive JavaScript Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1> Interactive Webpage</h1>
+
+  <!-- Light/Dark Mode Toggle -->
+  <button id="themeToggle">Toggle Dark Mode</button>
+
+  <!-- Counter Game -->
+  <div class="counter">
+    <p>Count: <span id="countValue">0</span></p>
+    <button id="incrementBtn">Increment</button>
+    <button id="resetBtn">Reset</button>
+  </div>
+
+  <!-- Collapsible FAQ -->
+  <div class="faq">
+    <h2>FAQ</h2>
+    <div class="faq-item">
+      <button class="faq-question">What is this project?</button>
+      <div class="faq-answer">It’s a demo of JavaScript interactivity!</div>
+    </div>
+  </div>
+
+  <!-- Form -->
+  <h2>Sign Up Form</h2>
+  <form id="signupForm">
+    <label>
+      Name: <input type="text" id="name" />
+    </label>
+    <span class="error" id="nameError"></span><br><br>
+
+    <label>
+      Email: <input type="text" id="email" />
+    </label>
+    <span class="error" id="emailError"></span><br><br>
+
+    <label>
+      Password: <input type="password" id="password" />
+    </label>
+    <span class="error" id="passwordError"></span><br><br>
+
+    <button type="submit">Sign Up</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
