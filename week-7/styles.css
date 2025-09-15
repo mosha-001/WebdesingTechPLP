@@ -1,0 +1,44 @@
+/* Part 1: Transitions */
+.hover-btn {
+  padding: 12px 20px;
+  background: royalblue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+.hover-btn:hover {
+  background: darkblue;
+  transform: scale(1.1);
+}
+
+/* Box Animation */
+.box {
+  width: 100px;
+  height: 100px;
+  background: crimson;
+  margin: 20px 0;
+  transition: transform 1s ease;
+}
+.box.animate {
+  transform: translateX(200px) rotate(180deg);
+}
+
+/* Modal with keyframes */
+.modal {
+  display: none; 
+  position: fixed; 
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+}
+.modal-content {
+  background: white;
+  margin: 10% auto;
+  padding: 20px;
+  width: 300px;
+  animation: slideIn 0.5s ease;
+}
+@keyframes slideIn {
+  from { transform: translateY(-50px); opacity: 0; }
+  to   { transform: translateY(0); opacity: 1; }
+}
