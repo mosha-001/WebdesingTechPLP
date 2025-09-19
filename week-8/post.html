@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Post — Twiga Blog</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Twiga Blog</a>
+      <nav class="primary-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <!-- ✅ This is where main.js will inject the post -->
+    <div id="single-post" class="single-post"></div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year-post"></span> Twiga Savanna</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/posts.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Twiga Blog — Home</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Twiga Blog</a>
+      <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">☰</button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Welcome to Twiga Blog</h1>
+      <p>Stories, tutorials, and small-business tips — written for creators and builders.</p>
+      <p><a class="btn" href="blog.html">Read the latest</a></p>
+    </section>
+
+    <section class="cards" aria-label="Featured posts">
+      <article class="card">
+        <img src="images\images\placeholder-1.png" alt="placeholder image">
+        <h3>Start small, think long</h3>
+        <p>Practical steps to grow a neighborhood business into a sustainable brand.</p>
+        <p><a href="blog.html">Read more →</a></p>
+      </article>
+
+      <article class="card">
+        <img src="images/images/placeholder-2.png" alt="placeholder image">
+        <h3>Designing simple systems</h3>
+        <p>How to use checklists and templates to save time and reduce mistakes.</p>
+        <p><a href="blog.html">Read more →</a></p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Twiga Savanna — Buy Local. Feel Global.</p>
+    </div>
+  </footer>
+
+  <script src="js/posts.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
